@@ -1,4 +1,3 @@
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.io.*;
 
@@ -22,6 +21,7 @@ public class StringCalculatorCalculatorMainTest {
     public void testScalcString() {
         ByteArrayOutputStream mockOutput = new ByteArrayOutputStream();
         String testCommands = "scalc ‘1,2,3’\n";
+        testCommands += "\n";
         testCommands += "exit";
 
         ByteArrayInputStream mockInput = new ByteArrayInputStream(testCommands.getBytes());
