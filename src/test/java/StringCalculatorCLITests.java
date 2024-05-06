@@ -15,7 +15,7 @@ public class StringCalculatorCLITests {
         StringCalculatorCLI calculator = new StringCalculatorCLI(inputStream, outputStream);
         calculator.run();
 
-        assertEquals("Welcome to this calculator this program shall take an input like scalc ´1,2,3 and return the result is 6\r\nThe result is 0\r\nExiting...\r\n", outputStream.toString());
+        assertEquals("Welcome to this calculator this program shall take an input like scalc ´1,2,3 and return the result is 6"+System.lineSeparator()+"The result is 0"+System.lineSeparator()+"Exiting..."+System.lineSeparator(), outputStream.toString());
     }
 
     @Test
@@ -29,7 +29,7 @@ public class StringCalculatorCLITests {
         StringCalculatorCLI calculator = new StringCalculatorCLI();
         calculator.run();
 
-        assertEquals("Welcome to this calculator this program shall take an input like scalc ´1,2,3 and return the result is 6\r\nThe result is 0\r\nExiting...\r\n", outputStream.toString());
+        assertEquals("Welcome to this calculator this program shall take an input like scalc ´1,2,3 and return the result is 6"+System.lineSeparator()+"The result is 0"+System.lineSeparator()+"Exiting..."+System.lineSeparator(), outputStream.toString());
 
     }
 
